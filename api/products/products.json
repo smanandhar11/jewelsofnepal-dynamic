@@ -1,0 +1,107 @@
+[
+    {
+        "productId":1,
+        "productName":"Angel Eye",
+        "category": "Earring",
+        "color":"green",
+        "price": 21.99,
+        "imageUrl": "app/assets/images/angel-eye.jpg"
+    },
+    {
+        "productId":2,
+        "productName":"Rusty Cardinal",
+        "category": "Earring",
+        "color":"red",
+        "price": 23.99,
+        "imageUrl": "app/assets/images/rusty-cardinal.jpg"
+    },
+    {
+        "productId":3,
+        "productName":"Fishy Red",
+        "category": "Earring",
+        "color":"red",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/fishy-red.jpg"
+    },
+    {
+        "productId":4,
+        "productName":"Black Swan",
+        "category": "Earring",
+        "color":"black",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/black-swan.jpg"
+    },
+    {
+        "productId":5,
+        "productName":"Red Level",
+        "category": "Earring",
+        "color":"red",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/red-level.jpg"
+    },
+    {
+        "productId":6,
+        "productName":"Fishy Red",
+        "category": "Earring",
+        "color":"red",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/fishy-red.jpg"
+    },
+    {
+        "productId":7,
+        "productName":"Black Swan",
+        "category": "Earring",
+        "color":"black",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/black-swan.jpg"
+    },
+    {
+        "productId":8,
+        "productName":"Red Level",
+        "category": "Earring",
+        "color":"red",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/red-level.jpg"
+    },
+    {
+        "productId":9,
+        "productName":"Purple Rain",
+        "category": "Set",
+        "color":"purple",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/set-3.jpg"
+    },
+    {
+        "productId":10,
+        "productName":"Flow",
+        "category": "Set",
+        "color":"black",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/set-4.jpg"
+    },
+    {
+        "productId":11,
+        "productName":"Pink Blink",
+        "category": "Set",
+        "color":"pink",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/set-2.jpg"
+    },
+    {
+        "productId":12,
+        "productName":"Curvy Love",
+        "category": "Necklace",
+        "color":"gold",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/necklace-3.jpg"
+    },
+    {
+        "productId":13,
+        "productName":"Bold Prediction",
+        "category": "Necklace",
+        "color":"red",
+        "colorB":"red",
+        "price": 19.99,
+        "imageUrl": "app/assets/images/necklace-4.jpg"
+    }
+]

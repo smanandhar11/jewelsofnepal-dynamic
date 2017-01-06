@@ -1,0 +1,33 @@
+<section>
+    <div class="row">
+        <div class="col-sm-2">
+            <div style="margin-left: 15px;">
+                //select input color
+                <select type="string" [(ngModel)]="listFilter">
+                    <option [ngValue]="color">COLOR</option>
+                    <option *ngFor="let colorType of colorTypes" [ngValue]="colorType.name">{{colorType.name}}</option>
+                </select><br>
+                //select input type
+                <select type="string" [(ngModel)]="listFiltertwo">
+                    <option [ngValue]="disabled" >TYPE</option>
+                    <option *ngFor="let catgType of catgTypes" [ngValue]="catgType.name">{{catgType.name}}</option>
+                </select>
+                //testing two way binding
+                <h3>{{listFilter}}</h3>
+            </div>
+
+        </div>
+        <div class="col-sm-10">
+            <h1 class="text-center">{{pageTitle}}</h1>
+            <div class="img-container col-xs-2" *ngFor="let product of products | selectFilter: listFilter | selectFiltertwo: listFiltertwo ">
+                <a [routerLink]="['/products', product.productId]"><img [src]="product.imageUrl"
+                                                                        [title]="product.productName"
+                                                                        [style.height.px]="imageHeight"
+                                                                        [style.width.px]="imageWidth"
+                >
+                    <h5 style="text-align: center">{{product.productName}}</h5></a>
+            </div>
+        </div>
+    </div>
+</section>
+

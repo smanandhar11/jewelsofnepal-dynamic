@@ -1,0 +1,33 @@
+<div class="container">
+    <div class='panel panel-primary' *ngIf='product'>
+        <div class='panel-heading' style='font-size:large'>
+            {{product.productName}}
+        </div>
+
+        <div class='panel-body'>
+            <div class='row'>
+                <div class='col-md-5'>
+                    <img class='center-block img-responsive'
+                         [style.width.px]='400'
+                         [style.margin.px]='2'
+                         [src]='product.imageUrl'
+                         [title]='product.productName'>
+                </div>
+                <div class='col-md-4'>
+                    <h3>Name: {{product.productName}}</h3>
+                    <h3>Category: {{product.category}}</h3>
+                    <h3>Price: {{product.price}}</h3>
+                    <span>Also Available in: <span class="glyphicon glyphicon-tint"></span></span><br>
+                    <button [routerLink]="['/products', product.productId,'confirm']" class="btn btn-success">Buy
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class='panel-footer'>
+            <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+                <i class='glyphicon glyphicon-chevron-left'></i> Back
+            </a>
+        </div>
+    </div>
+</div>
