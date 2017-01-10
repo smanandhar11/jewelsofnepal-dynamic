@@ -9,8 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var router_1 = require('@angular/router');
-var product_service_1 = require('./product.service');
+var router_1 = require("@angular/router");
+var product_service_1 = require("./product.service");
 var ProductConfirmComponent = (function () {
     // setting decencies
     function ProductConfirmComponent(_route, _productService) {
@@ -30,14 +30,15 @@ var ProductConfirmComponent = (function () {
         var _this = this;
         this._productService.getProduct(id).subscribe(function (product) { return _this.product = product; }, function (error) { return _this.errorMessage = error; });
     };
-    ProductConfirmComponent = __decorate([
-        core_1.Component({
-            selector: 'ap-app',
-            templateUrl: 'app/product/product-confirm.component.html'
-        }), 
-        __metadata('design:paramtypes', [router_1.ActivatedRoute, product_service_1.ProductService])
-    ], ProductConfirmComponent);
     return ProductConfirmComponent;
 }());
+ProductConfirmComponent = __decorate([
+    core_1.Component({
+        selector: 'ap-app',
+        templateUrl: 'app/product/product-confirm.component.html'
+    }),
+    __metadata("design:paramtypes", [router_1.ActivatedRoute,
+        product_service_1.ProductService])
+], ProductConfirmComponent);
 exports.ProductConfirmComponent = ProductConfirmComponent;
 //# sourceMappingURL=product-confirm.component.js.map

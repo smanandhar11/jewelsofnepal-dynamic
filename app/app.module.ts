@@ -10,9 +10,10 @@ import { ProductDetailGuard } from './product/product-guard.service';
 import { ProductMenuComponent } from './product/product-menu.component';
 import { ProductDetailComponent } from './product/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
-import {ProductConfirmComponent} from "./product/product-confirm.component";
-import {ProductFilterPipe} from './product/product-filter.pipe';
-import { ProductFilterTwoPipe } from './product/product-filtertwo.pipe';
+import { ProductConfirmComponent } from "./product/product-confirm.component";
+import { ColorFilterPipe } from './product/color-filter.pipe';
+import { TypeFilterPipe } from './product/type-filter.pipe';
+import {  PriceFilterPipe } from './product/price-filter.pipe';
 
 
 
@@ -36,8 +37,9 @@ import { ProductFilterTwoPipe } from './product/product-filtertwo.pipe';
     ProductDetailComponent,
     WelcomeComponent,
     ProductConfirmComponent,
-    ProductFilterPipe,
-    ProductFilterTwoPipe
+    ColorFilterPipe,
+    TypeFilterPipe,
+    PriceFilterPipe
 
   ],
   providers:[ProductDetailGuard ],

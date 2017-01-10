@@ -8,23 +8,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var ProductFilterPipe = (function () {
-    function ProductFilterPipe() {
+var core_1 = require("@angular/core");
+var ColorFilterPipe = (function () {
+    function ColorFilterPipe() {
     }
-    ProductFilterPipe.prototype.transform = function (value, listFilter) {
-        listFilter = listFilter ? listFilter.toLocaleLowerCase() : null;
-        return listFilter ? value.filter(function (product) {
-            return product.color.toLocaleLowerCase().indexOf(listFilter) !== -1;
+    ColorFilterPipe.prototype.transform = function (value, colorfilterInput) {
+        colorfilterInput = colorfilterInput ? colorfilterInput.toLocaleLowerCase() : null;
+        return colorfilterInput ? value.filter(function (product) {
+            return product.color.toLocaleLowerCase().indexOf(colorfilterInput) !== -1;
         }) : value;
     };
-    ProductFilterPipe = __decorate([
-        core_1.Pipe({
-            name: 'selectFilter'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ProductFilterPipe);
-    return ProductFilterPipe;
+    return ColorFilterPipe;
 }());
-exports.ProductFilterPipe = ProductFilterPipe;
-//# sourceMappingURL=product-filter.pipe.js.map
+ColorFilterPipe = __decorate([
+    core_1.Pipe({
+        name: 'colorFilter'
+    }),
+    __metadata("design:paramtypes", [])
+], ColorFilterPipe);
+exports.ColorFilterPipe = ColorFilterPipe;
+//# sourceMappingURL=color-filter.pipe.js.map

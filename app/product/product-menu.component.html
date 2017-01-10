@@ -3,23 +3,28 @@
         <div class="col-sm-2">
             <div style="margin-left: 15px;">
                 <!--select input color-->
-                <select type="string" [(ngModel)]="listFilter">
+                <select type="string" [(ngModel)]="colorfilterInput">
                     <option [ngValue]="color">COLOR</option>
                     <option *ngFor="let colorType of colorTypes" [ngValue]="colorType.name">{{colorType.name}}</option>
                 </select><br>
                 <!--select input type-->
-                <select type="string" [(ngModel)]="listFiltertwo">
+                <select type="string" [(ngModel)]="typefilterInput">
                     <option [ngValue]="disabled" >TYPE</option>
-                    <option *ngFor="let catgType of catgTypes" [ngValue]="catgType.name">{{catgType.name}}</option>
+                    <option *ngFor="let categoryType of categoryTypes" [ngValue]="categoryType.name">{{categoryType.name}}</option>
+                </select>
+                <!--select input price-->
+                <select type="string" [(ngModel)]="pricefilterInput">
+                    <option [ngValue]="disabled" >Price</option>
+                    <option *ngFor="let priceType of priceTypes" [ngValue]="priceType.name">{{priceType.name}}</option>
                 </select>
                 <!--testing two way binding-->
-                <h3>{{listFilter}}</h3>
+                <h3>{{pricefilterInput}}</h3>
             </div>
 
         </div>
         <div class="col-sm-10">
             <h1 class="text-center">{{pageTitle}}</h1>
-            <div class="img-container col-xs-2" *ngFor="let product of products | selectFilter: listFilter | selectFiltertwo: listFiltertwo ">
+            <div class="img-container col-xs-2" *ngFor="let product of products | colorFilter: colorfilterInput | typeFilter: typefilterInput | priceFilter : pricefilterInput">
                 <a [routerLink]="['/products', product.productId]"><img [src]="product.imageUrl"
                                                                         [title]="product.productName"
                                                                         [style.height.px]="imageHeight"

@@ -12,8 +12,9 @@ export class ProductMenuComponent implements OnInit{
     imageHeight: number = 230;
     errorMessage: string;
     products :IntProduct[];
-    listFilter: string;
-    listFiltertwo: string;
+    colorfilterInput: string;
+    typefilterInput: string;
+    pricefilterInput: string;
 
 
     //injecting dependency
@@ -34,12 +35,18 @@ export class ProductMenuComponent implements OnInit{
         {id: 3, name: "Gold"}
     ];
     //Select Filter List- type
-    catgTypes = [
+    categoryTypes = [
         {id: 0, name: "Earring"},
         {id: 1, name: "Finger-Ring"},
         {id: 2, name: "Necklace"},
         {id: 3, name:"Set"}
-    ]
+    ];
+    priceTypes = [
+        {id: 0, name: "Less than Rx.100"},
+        {id: 1, name: "Rs.100 - Rs.500"},
+        {id: 2, name: "Rs.500 - Rs.1000"},
+        {id: 3, name:"More than a Rx.1000"}
+    ];
 
     
 
